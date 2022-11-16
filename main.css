@@ -1,0 +1,143 @@
+html {
+    min-height: 100%;
+}
+body {
+    background: linear-gradient(#f8cfcd, #f18f8b);
+    background-repeat: no-repeat;
+}
+
+*{
+    font-family: sans-serif;
+}
+
+.paragraph{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.toDo__input{
+    font-size: 20px;
+    
+}
+
+.toDo__btn{
+    font-size: 20px;
+}
+
+.container{
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    animation: container-starting 0.5s;
+    animation-timing-function: cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+@keyframes container-starting {
+    0% {
+        opacity: 0;
+        transform: translateY(-200px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.headline,
+.container p,
+.container form {
+    animation: any-fade-in 0.4s backwards;
+}
+
+.headline {
+    animation-delay: 0.5s;
+}
+
+.container p {
+    animation-delay: 0.6s;
+}
+
+.container form {
+    animation-delay: 0.7s;
+}
+
+@keyframes any-fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.headline{
+    margin: 0;
+    font-family: serif;
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.error-msg{
+    display: none;
+    color: red;
+    font-style: italic;
+}
+
+.error-msg.visible{
+    display: block;
+    animation: error-anim 0.3s;
+    animation-iteration-count: 3;
+}
+
+@keyframes error-anim {
+    0% {
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.to-do__item{
+    padding-right: 80px;
+    font-size: 23px;
+    font-weight: 550;
+    animation: to-do__item-starting 0.3 s;
+    list-style-type: none;
+    transition: opacity 0.3s;
+}
+
+.to-do__item:hover{
+    text-decoration: line-through;
+    cursor: pointer;
+}
+
+@keyframes to-do__item-starting {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.to-do__item.completed{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.remove__button{
+    background-color: transparent;
+    border-width: 0;
+    font-size: 22px;
+    padding-left: 0.7em;
+}
