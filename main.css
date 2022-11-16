@@ -11,13 +11,13 @@ body {
 }
 
 .paragraph{
-    font-size: 20px;
-    font-weight: 500;
+    font-size: 18px;
+    font-weight: 540;
+    padding-bottom: 15px;
 }
 
 .toDo__input{
     font-size: 20px;
-    
 }
 
 .toDo__btn{
@@ -106,9 +106,10 @@ body {
 }
 
 .to-do__item{
-    padding-right: 80px;
-    font-size: 23px;
-    font-weight: 550;
+    padding-right: 75px;
+    padding-bottom: 10px;
+    font-size: 27px;
+    font-weight: 500;
     animation: to-do__item-starting 0.4s;
     list-style-type: none;
     transition: opacity 0.3s;
