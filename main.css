@@ -109,7 +109,7 @@ body {
     padding-right: 80px;
     font-size: 23px;
     font-weight: 550;
-    animation: to-do__item-starting 0.3 s;
+    animation: to-do__item-starting 0.4s;
     list-style-type: none;
     transition: opacity 0.3s;
 }
